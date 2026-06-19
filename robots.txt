@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fegett.github.io/cn-index-leyusports-com-cn/sitemap.xml
