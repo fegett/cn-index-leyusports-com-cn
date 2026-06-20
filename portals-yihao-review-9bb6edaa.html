@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>壹号娱乐 · 站点介绍与可信说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1e1e1e;
+            background-color: #f5f4f0;
+        }
+
+        .hero {
+            background: #121212;
+            color: #eae7e0;
+            padding: 4rem 1.5rem 3.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(230, 190, 130, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+            position: relative;
+        }
+
+        .hero .sub {
+            font-size: 1.15rem;
+            color: #b7b2aa;
+            max-width: 30rem;
+            margin: 0 auto;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 2.8rem 0;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #2a2a2a;
+            margin-bottom: 1.25rem;
+            border-left: 4px solid #bf8f4b;
+            padding-left: 1rem;
+        }
+
+        .section-text {
+            font-size: 1.05rem;
+            color: #3a3a3a;
+            max-width: 72ch;
+            margin-bottom: 1.25rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.8rem;
+            margin: 2rem 0 0.5rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 1.6rem 1.4rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.15s, box-shadow 0.2s;
+            border: 1px solid #e6e1d9;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        .card h3 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #1f1f1f;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #a67938;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+            font-weight: 450;
+        }
+
+        a:hover {
+            color: #7a5b2a;
+            border-bottom-color: #bf8f4b;
+        }
+
+        .tip-box {
+            background: #eeeae2;
+            border-radius: 14px;
+            padding: 1.5rem 1.8rem;
+            margin: 1.8rem 0;
+            border-left: 5px solid #bf8f4b;
+        }
+
+        .tip-box p {
+            margin-bottom: 0.6rem;
+            color: #2e2e2e;
+        }
+
+        .tip-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #ddd8ce;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            color: #1f1f1f;
+            margin-bottom: 0.3rem;
+        }
+
+        .faq-a {
+            color: #4a4a4a;
+            font-size: 0.98rem;
+        }
+
+        .action-note {
+            background: #ffffff;
+            border: 1px solid #dcd5ca;
+            border-radius: 18px;
+            padding: 1.6rem 2rem;
+            text-align: center;
+            margin: 2rem 0 0.8rem;
+        }
+
+        .action-note p {
+            font-size: 1.05rem;
+            color: #2c2c2c;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2.2rem 1.5rem;
+            color: #7f7a72;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd8ce;
+            background: #f0ede6;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero {
+                padding: 3rem 1rem 2.5rem;
+            }
+            .section-title {
+                font-size: 1.35rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .action-note {
+                padding: 1.2rem 1rem;
+            }
+        }
+
+        @media (min-width: 700px) {
+            .hero .sub {
+                font-size: 1.25rem;
+            }
+            section {
+                padding: 3.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>壹号娱乐</h1>
+    <div class="sub">一个关于信息聚合与轻量互动的站点 · 从使用者的视角慢慢认识它</div>
+</div>
+
+<div class="container">
+    <section>
+        <h2 class="section-title">站点摘要</h2>
+        <p class="section-text">
+            <a href="https://portals-yihao.com" class="inline-link">壹号娱乐</a> 是一个以内容集成与轻社区氛围为主的个人兴趣站点。它并不追求大而全的资讯覆盖，而是希望为访客提供一片能安静浏览、适度参与的角落。站内内容涵盖日常随笔、兴趣推荐以及一些经筛选的实用链接，整体节奏偏慢，适合在碎片时间里随手翻阅。
+        </p>
+        <p class="section-text">
+            站点由个人维护，更新频率不固定，但每一篇内容都保留了作者的真实视角。没有弹窗广告，没有强制注册，也没有算法推荐带来的压迫感——它更像一本放在桌边、偶尔翻几页的笔记本。
+        </p>
+    </section>
+
+    <section>
+        <h2 class="section-title">几点特点</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>干净浏览</h3>
+                <p>页面布局清爽，无干扰式推广。你可以把注意力完全放在文字与图片上，而不是被按钮和横幅分散精力。</p>
+            </div>
+            <div class="card">
+                <h3>内容克制</h3>
+                <p>不追逐热点，不重复搬运。每篇文章都经过编辑者自己的消化和整理，篇幅不长但信息完整。</p>
+            </div>
+            <div class="card">
+                <h3>低门槛参与</h3>
+                <p>如果你有兴趣，可以通过站内提供的联系方式留下反馈。没有复杂的注册流程，也不要求留下个人信息。</p>
+            </div>
+            <div class="card">
+                <h3>持续迭代</h3>
+                <p>站点在功能与内容上会不定期做小范围调整，以适应用户的真实使用习惯。变化很慢，但方向清晰。</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">使用建议</h2>
+        <p class="section-text">
+            你可以把 <a href="https://portals-yihao.com">壹号娱乐</a> 当作一个日常补充型的信息源。不必每天都来，也不需要带着明确的目的。更适合在午休、通勤或睡前打开看看首页有没有新内容，或者翻翻之前没注意到的旧文章。
+        </p>
+        <p class="section-text">
+            如果你对某个话题有共鸣，可以顺着文章里的外部链接去探索更多背景。站内的导航简单，分类不多，但足够让你在几个页面之间轻松跳转，不会迷失在层级之中。
+        </p>
+        <div class="tip-box">
+            <p>💡 <strong>一个小建议：</strong> 试着用浏览实体杂志的心态来使用这个站点——不追求效率，只享受偶然遇见的惊喜。</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">可信与边界</h2>
+        <p class="section-text">
+            本站所有内容均为个人经验或公开资料整理，不代表任何机构立场。作者在写作时会尽量标注来源，但不对第三方链接的后续变更负责。如果你发现信息有误或链接失效，欢迎通过站内反馈渠道告知。
+        </p>
+        <p class="section-text">
+            网站不会主动收集你的任何隐私数据，不使用追踪脚本或第三方分析工具。你的每一次访问都是匿名的、一次性的。这也是为什么页面加载速度一直很理想——没有多余的东西在后台运行。
+        </p>
+        <p class="section-text">
+            <a href="https://portals-yihao.com">壹号娱乐</a> 目前不开放商业合作或广告投放，也不会以任何理由向用户索取费用。它是一个完全由兴趣驱动的个人项目，未来如果有任何模式上的变化，都会在首页通过公告说明。
+        </p>
+    </section>
+
+    <section>
+        <h2 class="section-title">常见想法</h2>
+        <div class="faq-item">
+            <div class="faq-q">内容更新频率怎么样？</div>
+            <div class="faq-a">没有固定排期，平均下来每月会有2～4次更新，主要集中在周末或假期前后。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">需要登录才能看完整内容吗？</div>
+            <div class="faq-a">完全不需要。所有公开内容对所有人可见，不设阅读权限，也不区分访客与会员。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">站内链接打不开怎么办？</div>
+            <div class="faq-a">部分外部链接可能因为原站点变更而失效，你可以通过页面底部的联系方式提醒我们更新。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">手机上看体验好吗？</div>
+            <div class="faq-a">页面采用响应式设计，在手机、平板和电脑上都有不错的阅读体验，不需要缩放或横屏。</div>
+        </div>
+    </section>
+
+    <div class="action-note">
+        <p>如果你愿意多了解一点，不妨直接去 <a href="https://portals-yihao.com">壹号娱乐</a> 看看。没有压力，也没有时间限制。</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>一个慢慢生长的小站 · 感谢你的停留</p>
+</div>
+
+</body>
+</html>
